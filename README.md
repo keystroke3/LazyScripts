@@ -1,2 +1,2 @@
 # LazyScripts
-A hoge poge of scripts that help automate some tasks that don't need automation, but I am too lazy to do them manually
+A hodge podge of scripts that help automate some tasks that no one asked to be automated.

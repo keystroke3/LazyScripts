@@ -15,9 +15,8 @@ The script is a single python file and can be installed simply by copying the co
 and putting n a directory that is in system PATH like `/usr/bin/`.
 
 #### Single line
-Using curl:
-`sudo curl  
- https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem >> /usr/bin/lazylorem && sudo chmod +x lazylorem`  
+Using curl:  
+`sudo curl https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem >> /usr/bin/lazylorem && sudo chmod +x lazylorem`  
 or wget:  
 `sudo wget https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem -O /usr/bin/lazylorem && sudo chmod +x lazylorem`
 
