@@ -16,9 +16,10 @@ and putting n a directory that is in system PATH like `/usr/bin/`.
 
 #### Single line
 Using curl:
-`sudo curl https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem >> /usr/bin/lazylorem && sudo chmod +x layzlorem`  
+`sudo curl  
+ https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem >> /usr/bin/lazylorem && sudo chmod +x lazylorem`  
 or wget:  
-`sudo wget https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem -O /usr/bin/lazylorem && sudo chmod +x layzlorem`
+`sudo wget https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem -O /usr/bin/lazylorem && sudo chmod +x lazylorem`
 
 #### Git clone
 With this method, you have to clone the repo and create a symbolic link in `/usr/bin/`
