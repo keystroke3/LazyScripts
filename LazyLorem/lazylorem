@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from subprocess import run
+from subprocess import call
 from random import randint
 from sys import argv
 import sys
@@ -49,16 +49,16 @@ def make_text(line_limit, word_limit):
     being sent to standard out.
     """
     lines = []
-    while line_limit != 0:
+    while line_limit > 0:
         line_limit -= 1
         picked_words = pick_words(word_limit)
         joined_words = ",".join(picked_words)
         lines.append(joined_words.replace(",", " "))
 
     joined_lines = ",".join(lines)
-    full_text = joined_lines.replace(",","\n")
-    run(f" echo {full_text} | xclip -selection clipboard -r", shell=True, check=True)
-    print(full_text)
+    print(joined_lines.replace(',','\n'))
+    full_text = joined_lines.replace(',', '\\n')
+    call(f" echo {full_text} | xclip -selection clipboard -r", shell=True)
 
 #ini() checks for arguments and initializes values
 def init():
