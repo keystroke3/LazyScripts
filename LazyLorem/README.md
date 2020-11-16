@@ -5,7 +5,7 @@ It picks words at random from a large snippet of Lorem Ipsum and saves them to c
 
 ## Installation
 ### Requirements
-* python 3.0
+* Python >= 3.0
 * Linux
 * xclip
 
@@ -14,10 +14,13 @@ It picks words at random from a large snippet of Lorem Ipsum and saves them to c
 The script is a single python file and can be installed simply by copying the contents of the file  
 and putting n a directory that is in system PATH like `/usr/bin/`.
 
-#### single line
-`sudo curl [url] >> /usr/bin/lazylorem && sudo chmod +x layzlorem`
+#### Single line
+Using curl:
+`sudo curl https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem >> /usr/bin/lazylorem && sudo chmod +x layzlorem`
+or wget:
+`sudo wget https://raw.githubusercontent.com/keystroke3/LazyScripts/main/LazyLorem/lazylorem -O /usr/bin/lazylorem && sudo chmod +x layzlorem`
 
-#### git clone
+#### Git clone
 With this method, you have to clone the repo and create a symbolic link in `/usr/bin/`
 ```bash
 git clone https://github.com/keystroke3/LazyScripts.git
