@@ -2,7 +2,7 @@
 
 from subprocess import call
 from random import randint
-from sys import argv
+from sys import argv, platform
 import sys
 
 # The conents of Lorem can be changed to anything space seperation and no newlines
@@ -57,8 +57,9 @@ def make_text(line_limit, word_limit):
 
     joined_lines = ",".join(lines)
     print(joined_lines.replace(',','\n'))
-    full_text = joined_lines.replace(',', '\n')
-    call(f" echo '{full_text}' | xclip -selection clipboard -r", shell=True)
+    if platform == "linux" or platform == "linux2":
+        full_text = joined_lines.replace(',', '\n')
+        call(f" echo '{full_text}' | xclip -selection clipboard -r", shell=True)
 
 #ini() checks for arguments and initializes values
 def init():

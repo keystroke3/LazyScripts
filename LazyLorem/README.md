@@ -1,13 +1,13 @@
 # LazyLorem
 
-This is a tool to generate filler text for whatever case during design.  
-It picks words at random from a large snippet of Lorem Ipsum and saves them to clipboard and outputs them to standard out.
+This is a tool to generate filler text for whatever case during design. It picks words at random from a large  
+snippet of Lorem Ipsum and saves them to clipboard and outputs them to standard out. For the automatic copying to  
+work, you need to be running linux with xclip installed. Apart from that the script should work on any platform  
 
 ## Installation
 ### Requirements
 * Python >= 3.0
-* Linux
-* xclip
+* xclip (for automatic copy)
 
 
 ### Install as system command
