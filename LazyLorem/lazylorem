@@ -57,8 +57,8 @@ def make_text(line_limit, word_limit):
 
     joined_lines = ",".join(lines)
     print(joined_lines.replace(',','\n'))
-    full_text = joined_lines.replace(',', '\\n')
-    call(f" echo {full_text} | xclip -selection clipboard -r", shell=True)
+    full_text = joined_lines.replace(',', '\n')
+    call(f" echo '{full_text}' | xclip -selection clipboard -r", shell=True)
 
 #ini() checks for arguments and initializes values
 def init():
