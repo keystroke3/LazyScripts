@@ -26,7 +26,7 @@ With this method, you have to clone the repo and create a symbolic link in `/usr
 git clone https://github.com/keystroke3/LazyScripts.git
 cd LazyScripts/LazyLorem
 chmod +x lazylorem
-ln -s $PWD/lazylorem /usr/bin/
+sudo ln -s $PWD/lazylorem /usr/bin/
 ```
 To use it, just run `lazylorem` from anywere in the terminal. You can also use it with list selectors and command runners such as [rofi](https://github.com/davatorium/rofi) and [dmenu](https://github.com/davatorium/rofi)
 ### Use with python command
